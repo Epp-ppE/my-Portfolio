@@ -11,7 +11,20 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text("Home"),
+      body: ListView(
+        scrollDirection: Axis.vertical,
+        children: [
+          Container(
+            height: 500,
+            width: double.maxFinite,
+            color: Colors.blueGrey,
+          ),
+          Container(
+            height: 500,
+            width: double.maxFinite,
+            color: Colors.green[300],
+          ),
+        ],
       ),
     );
   }
