@@ -45,7 +45,7 @@ class SkillsDesktop extends StatelessWidget {
                             children: [
                               for(int i = 0; i < skillItems.length; i++)
                                 Container(
-                                  width: 200,
+                                  width: screenWidth*0.75 / 3 - 20,
                                   decoration: BoxDecoration(
                                     color: CustomColor.secondaryColor,
                                     borderRadius: BorderRadius.circular(10),
