@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/constants/skill_items.dart';
+import 'package:my_portfolio/styles/style.dart';
 
 class SkillsMobile extends StatelessWidget {
   const SkillsMobile({super.key});
@@ -13,9 +14,9 @@ class SkillsMobile extends StatelessWidget {
     final screenHeight = screenSize.height;
 
     return Container(
+                decoration: kBackgroundDecoration,
                 width: screenWidth,
                 padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
-                color: CustomColor.primaryColor,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Column(

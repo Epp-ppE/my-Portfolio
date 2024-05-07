@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/constants/skill_items.dart';
+import 'package:my_portfolio/styles/style.dart';
 
 class SkillsDesktop extends StatelessWidget {
   const SkillsDesktop({super.key});
@@ -13,9 +14,9 @@ class SkillsDesktop extends StatelessWidget {
     final screenHeight = screenSize.height;
 
     return Container(
+                decoration: kBackgroundDecoration,
                 width: screenWidth,
                 padding: const EdgeInsets.fromLTRB(25,20,25,60),
-                color: CustomColor.primaryColor,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   mainAxisSize: MainAxisSize.min,
