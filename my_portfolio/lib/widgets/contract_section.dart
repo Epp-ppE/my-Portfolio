@@ -9,10 +9,15 @@ import 'package:url_launcher/url_launcher.dart';
 
 class ContractSection extends StatelessWidget {
   const ContractSection({super.key});
+  
 
   @override
   Widget build(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    final screenWidth = screenSize.width;
+    final screenHeight = screenSize.height;
     return Container(
+      width: screenWidth,
       padding: const EdgeInsets.fromLTRB(25,20,25,50),
       color: CustomColor.scaffoldBg3,
       child: Column(

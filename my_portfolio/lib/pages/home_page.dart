@@ -52,10 +52,10 @@ class _HomePageState extends State<HomePage> {
           endDrawer: constraints.maxWidth >= 790? 
             null : 
             DrawerMobile(
-              onNavItemTap: (
-                int navIdex){
+              onNavItemTap: (int navIdex){
                   // call function
-                }
+                  scrollToSection(navIdex);
+              }
             ),
           backgroundColor: CustomColor.scaffoldBg,
           body: SingleChildScrollView(
@@ -68,6 +68,7 @@ class _HomePageState extends State<HomePage> {
                 if(constraints.maxWidth >= 790)
                   HeaderDesktop(onNavMenuTap: (int navIndex){
                     // call function
+                      scrollToSection(navIndex);
                     }
                   ) 
                 else HeaderMobile(
