@@ -6,11 +6,11 @@ class CustomTextField extends StatelessWidget {
   const CustomTextField({
     super.key, 
     this.controller, 
-    this.maxLine = 1, 
+    this.maxLines = 1, 
     this.hintText,
   });
   final TextEditingController? controller;
-  final int maxLine;
+  final int maxLines;
   final String? hintText;
 
   OutlineInputBorder get getInputBorder{
@@ -23,12 +23,14 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      controller: controller,
+      maxLines: maxLines,
       style: const TextStyle(
         color: CustomColor.scaffoldBg,
       ),
       cursorColor: CustomColor.accentColor2,
       decoration: InputDecoration(
-        hintText: "Name",
+        hintText: hintText,
         hintStyle: const TextStyle(
           color: CustomColor.scaffoldBg,
         ),
