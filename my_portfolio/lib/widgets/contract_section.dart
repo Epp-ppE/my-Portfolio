@@ -104,7 +104,7 @@ class ContractSection extends StatelessWidget {
                     throw 'Could not launch $url';
                   }
                 },
-                child: Image.asset("github.png", width: 28,),
+                child: Image.asset("assets/github.png", width: 28,),
               ),
               InkWell(
                 onTap: () async {
@@ -115,7 +115,7 @@ class ContractSection extends StatelessWidget {
                     throw 'Could not launch $url';
                   }
                 },
-                child: SvgPicture.asset("linkedin.svg", width: 28,),
+                child: SvgPicture.asset("assets/linkedin.svg", width: 28,),
               ),
               InkWell(
                 onTap: () async {
@@ -126,7 +126,7 @@ class ContractSection extends StatelessWidget {
                     throw 'Could not launch $url';
                   }
                 },
-                child: SvgPicture.asset("instagram.svg", width: 28,),
+                child: SvgPicture.asset("assets/instagram.svg", width: 28,),
               ),
               InkWell(
                 onTap: () async {
@@ -137,7 +137,7 @@ class ContractSection extends StatelessWidget {
                     throw 'Could not launch $url';
                   }
                 },
-                child: SvgPicture.asset("facebook.svg", width: 28,),
+                child: SvgPicture.asset("assets/facebook.svg", width: 28,),
               ),
             ],
           )
